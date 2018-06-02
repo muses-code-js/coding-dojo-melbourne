@@ -26,7 +26,7 @@ class Yatzy {
         return 0
     }
     number(value) {
-        return _(this.diceRolls).filter(roll => roll === value).sum()
+        return _(this.diceRolls).filter(roll => roll === value).sum() 
     }
     pair() {
         if (_(this.diceRolls).uniq().size() === 5) {
