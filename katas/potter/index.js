@@ -11,15 +11,21 @@ const DISCOUNTS = [0,
 const BOOKS = [0,1,2,3,4]
 
 function potter(books = []){
-    let totalPrice = 0
-    let freqList = freq(books)
+    const invalidBooks = books.filter( num => num < 0 && num > 4 )
+    if (invalidBooks.length > 0){
+        throw new Error("Invalid book number!")
+    } 
 
-    freqList.filter((f) => {
-        return f != 0
-    })
-    totalPrice += BASE_PRICE * freqList.length * DISCOUNTS[freqList.length]
-    return totalPrice
+    let totalPrice = 0
+
+    for (let freqList = freq(books); freqList.length > 0; freqList = removeSet(freqList)){
+        freqList = removeZeros(freqList)
+
+        totalPrice += calculateSetPrice(freqList.length)
+    }
+    return totalPrice 
 }
+
 function freq(books=[]){
     const countingBooks = [0, 0, 0, 0, 0]
     books.forEach((book) => {
@@ -27,6 +33,18 @@ function freq(books=[]){
     })
     return countingBooks
 }
-        
 
-module.exports={potter, freq};
+function removeZeros (array) {
+    return array.filter(number => number != 0)
+}
+        
+function calculateSetPrice (setSize = 0) {
+    return BASE_PRICE * setSize * DISCOUNTS[setSize]
+}
+
+function removeSet(array){
+    return array.map(x => x-1)
+
+}
+
+module.exports={potter, freq, removeZeros, calculateSetPrice, removeSet };
