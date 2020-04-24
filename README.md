@@ -1,22 +1,22 @@
 # Coding Dojo
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/node-girls-australia/coding-dojo/master/logo.png" width="500">
+  <img src="./musescodejs-logo.png" width="500">
 </p>
 
 <p align="center">
-  <a href="http://nodegirls-au.slack.com/messages/sydney-dojo-sessions/"><img src="https://img.shields.io/badge/slack.com-nodegirls--au-green.svg"></a>
-  <a href="https://www.meetup.com/en-AU/Node-Girls-Sydney/"><img src="https://img.shields.io/badge/%F0%9D%93%B6%20meetup.com-Node--Girls--Sydney-red.svg"></a>
+  <a href="http://muses-code-js.slack.com/messages/melbourne-dojos/"><img src="https://img.shields.io/badge/slack.com-muses--code--js-green.svg"></a>
+  <a href="https://www.meetup.com/MusesCodeJS-Melbourne/"><img src="https://img.shields.io/badge/%F0%9D%93%B6%20meetup.com-MusesCodeJS--Melbourne-red.svg"></a>
 </p>
 
 ### Tech Requirements
 1. Ensure that you have node installed in your system
-  ##### For Windows User
-  - Download the Windows installer from the Nodes.js® web site.
+  ##### For Windows Users
+  - [Download the Windows installer](https://nodejs.org/en/download/) from the Nodes.js® web site.
   - Run the installer.
   - Follow the prompts in the installer (Accept the license agreement, click the NEXT button and accept the default installation settings).
-  ##### For Mac users
-  - use homebrew/nvm to install node
+  ##### For Mac Users
+  - use homebrew/nvm to install node (instructions on how to install homebrew and node are [here](https://treehouse.github.io/installation-guides/mac/node-mac.html))
 2. You have to know the basic of JavaScript.
   - dofactory: JavaScript reference guide http://www.dofactory.com/tutorial/javascript
   - JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
@@ -35,13 +35,15 @@
 
 ### Running the Katas
 
-1. Clone the github repository.
-2. run `nvm use` to run with the latest node version.
-3. run `npm install` to use the dependencies (at present its mocha to write the tests)
-4. run `npm test` to run the tests.
+1. fork the github repository
+2. change directories into the katas folder `cd katas`
+3. change directories into one of the katas - e.g. `cd fizz-buzz`
+4. run `nvm use` to run with the latest node version.
+5. run `npm install` to use the dependencies (at present its mocha to write the tests)
+6. run `npm test` to run the tests.
 
 Share your work by following the [Contributing Guidelines](./CONTRIBUTING.md)
 
 ### Feedback
 
-For any other feedbacks feel free to email us at `info@nodegirls.com.au`
+For any other feedbacks feel free to email us at `melbourne@musescodejs.org`
