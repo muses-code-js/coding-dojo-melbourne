@@ -1,4 +1,4 @@
-# Coding Dojo
+# Coding Dojo Melbourne
 
 <p align="center">
   <img src="./musescodejs-logo.png" width="500">
