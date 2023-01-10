@@ -4,6 +4,6 @@
     "test": "light-server --serve . --watchexp '**/*.js'"
   },
   "devDependencies": {
-    "light-server": "^2.2.1"
+    "light-server": "^2.9.1"
   }
 }
